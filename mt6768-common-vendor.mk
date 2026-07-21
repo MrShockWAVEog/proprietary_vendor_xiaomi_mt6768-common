@@ -428,7 +428,6 @@ PRODUCT_PACKAGES += \
     libNoFpsActor \
     libOpenCL \
     libTEECommon \
-    libaal_key \
     libaal_mtk \
     libaalservice \
     libadpcmdec_mtk \
