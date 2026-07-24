@@ -419,6 +419,7 @@ PRODUCT_PACKAGES += \
     libSoftGatekeeper \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
+    vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.pq@2.13-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     lbs_hidl_service-impl \
