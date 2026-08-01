@@ -7989,6 +7989,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "lbs_hidl_service@1.0.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_android.hardware.drm@1.4-service.widevine.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
