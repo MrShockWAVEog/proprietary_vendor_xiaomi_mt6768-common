@@ -432,7 +432,6 @@ PRODUCT_PACKAGES += \
     libaal_mtk \
     libaalservice \
     libadpcmdec_mtk \
-    libalacdec_mtk \
     libapmonitor_vendor \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
@@ -502,7 +501,7 @@ PRODUCT_PACKAGES += \
     libsfplugin_ccodec_utils-v31 \
     libsimaka \
     libssl-mdapp \
-    libstagefright_bufferqueue_helper-v33 \
+    libstagefright_bufferqueue_helper-v31 \
     libstorage_otp \
     libstrongswan \
     libteeclientjni \

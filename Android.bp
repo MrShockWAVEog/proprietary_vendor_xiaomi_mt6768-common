@@ -3424,34 +3424,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libalacdec_mtk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libalacdec_mtk.so",
-            ],
-            shared_libs: [
-                "libmtk_drvb",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libapmonitor_vendor",
     owner: "xiaomi",
     strip: {
@@ -3750,7 +3722,7 @@ cc_prebuilt_library_shared {
                 "libstagefright_bufferpool@2.0.1",
                 "libui-v34",
                 "libutils",
-                "libstagefright_bufferqueue_helper-v33",
+                "libstagefright_bufferqueue_helper-v31",
                 "libcodec2_hidl_plugin-v31",
                 "libc++",
                 "libc",
@@ -3795,7 +3767,7 @@ cc_prebuilt_library_shared {
                 "libstagefright_bufferpool@2.0.1",
                 "libui-v34",
                 "libutils",
-                "libstagefright_bufferqueue_helper-v33",
+                "libstagefright_bufferqueue_helper-v31",
                 "libcodec2_hidl_plugin-v31",
                 "libc++",
                 "libc",
@@ -3842,7 +3814,7 @@ cc_prebuilt_library_shared {
                 "libstagefright_bufferpool@2.0.1",
                 "libui-v34",
                 "libutils",
-                "libstagefright_bufferqueue_helper-v33",
+                "libstagefright_bufferqueue_helper-v31",
                 "libcodec2_hidl_plugin-v31",
                 "libc++",
                 "libc",
@@ -3942,6 +3914,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhwbinder",
+                "libged",
                 "libcodec2_soft_common-v31",
                 "libcutils",
                 "liblog",
@@ -3990,6 +3963,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhwbinder",
+                "libged",
                 "libcodec2_soft_common-v31",
                 "libcutils",
                 "liblog",
@@ -4068,8 +4042,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcodec2",
                 "libcodec2_mtk_c2store",
-                "libalacdec_mtk",
-                "libmtk_drvb",
                 "libc++",
                 "libc",
                 "libm",
@@ -4103,7 +4075,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcodec2",
                 "libcodec2_mtk_c2store",
-                "libaudioutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -5553,7 +5524,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libstagefright_bufferqueue_helper-v33",
+    name: "libstagefright_bufferqueue_helper-v31",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -5561,7 +5532,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper-v33.so",
+                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper-v31.so",
             ],
             shared_libs: [
                 "libbase",
