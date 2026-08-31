@@ -214,7 +214,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6768-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc \
     vendor/xiaomi/mt6768-common/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/xiaomi/mt6768-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
-    vendor/xiaomi/mt6768-common/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/xiaomi/mt6768-common/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/mt6768-common/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/mt6768-common/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
@@ -588,7 +587,6 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml \
-    android.hardware.usb@1.2-service-mediatekv2.xml \
     gnss-mtk.xml \
     gnss@2.1-service-mtk.xml \
     lbs_hidl_service@1.0.xml \
@@ -615,7 +613,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1-service.beanpod \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
-    android.hardware.usb@1.2-service-mediatekv2 \
     tetheroffloadservice \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mmagent@1.1-service \
