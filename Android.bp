@@ -3047,7 +3047,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.13-impl",
+    name: "vendor.mediatek.hardware.pq@2.15-impl",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -3055,12 +3055,16 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so",
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so",
             ],
             shared_libs: [
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
+                "libhardware",
+                "android.frameworks.sensorservice@1.0",
+                "android.hardware.sensors@1.0",
+                "libsensorndkbridge",
                 "liblog",
                 "libutils-v32",
                 "libcutils",
@@ -3081,11 +3085,16 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.pq@2.11",
                 "vendor.mediatek.hardware.pq@2.12",
                 "vendor.mediatek.hardware.pq@2.13",
+                "vendor.mediatek.hardware.pq@2.14",
+                "vendor.mediatek.hardware.pq@2.15",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
+                "vendor.mediatek.hardware.mmagent@1.0",
+                "vendor.mediatek.hardware.mmagent@1.1",
                 "libdrm",
                 "libmml",
                 "libpqframework",
+                "libdmabufheap",
                 "libsync",
                 "libaalservice",
                 "libc++",
@@ -6111,6 +6120,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcutils",
+                "libutils",
                 "liblog",
                 "libc++",
                 "libc",
@@ -7027,6 +7037,91 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.pq@2.10",
                 "vendor.mediatek.hardware.pq@2.11",
                 "vendor.mediatek.hardware.pq@2.12",
+                "vendor.mediatek.hardware.pq@2.2",
+                "vendor.mediatek.hardware.pq@2.3",
+                "vendor.mediatek.hardware.pq@2.4",
+                "vendor.mediatek.hardware.pq@2.5",
+                "vendor.mediatek.hardware.pq@2.6",
+                "vendor.mediatek.hardware.pq@2.7",
+                "vendor.mediatek.hardware.pq@2.8",
+                "vendor.mediatek.hardware.pq@2.9",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.14",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.14.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.pq@2.0",
+                "vendor.mediatek.hardware.pq@2.1",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq@2.11",
+                "vendor.mediatek.hardware.pq@2.12",
+                "vendor.mediatek.hardware.pq@2.13",
+                "vendor.mediatek.hardware.pq@2.2",
+                "vendor.mediatek.hardware.pq@2.3",
+                "vendor.mediatek.hardware.pq@2.4",
+                "vendor.mediatek.hardware.pq@2.5",
+                "vendor.mediatek.hardware.pq@2.6",
+                "vendor.mediatek.hardware.pq@2.7",
+                "vendor.mediatek.hardware.pq@2.8",
+                "vendor.mediatek.hardware.pq@2.9",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.15",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.15.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.pq@2.0",
+                "vendor.mediatek.hardware.pq@2.1",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq@2.11",
+                "vendor.mediatek.hardware.pq@2.12",
+                "vendor.mediatek.hardware.pq@2.13",
+                "vendor.mediatek.hardware.pq@2.14",
                 "vendor.mediatek.hardware.pq@2.2",
                 "vendor.mediatek.hardware.pq@2.3",
                 "vendor.mediatek.hardware.pq@2.4",
@@ -8668,7 +8763,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libhardware",
-                "vendor.mediatek.hardware.pq@2.13",
+                "vendor.mediatek.hardware.pq@2.15",
                 "libc++",
                 "libc",
                 "libm",

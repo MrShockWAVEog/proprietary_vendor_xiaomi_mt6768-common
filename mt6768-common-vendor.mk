@@ -420,7 +420,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.mms@1.6-impl \
-    vendor.mediatek.hardware.pq@2.13-impl \
+    vendor.mediatek.hardware.pq@2.15-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     lbs_hidl_service-impl \
     libDR \
@@ -552,6 +552,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.11 \
     vendor.mediatek.hardware.pq@2.12 \
     vendor.mediatek.hardware.pq@2.13 \
+    vendor.mediatek.hardware.pq@2.14 \
+    vendor.mediatek.hardware.pq@2.15 \
     vendor.mediatek.hardware.pq@2.2 \
     vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.pq@2.4 \
