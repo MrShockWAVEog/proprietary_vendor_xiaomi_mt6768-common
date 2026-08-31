@@ -12,6 +12,100 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "AVCSecureVdecCA",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/AVCSecureVdecCA.so",
+            ],
+            shared_libs: [
+                "libTEECommon",
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/AVCSecureVdecCA.so",
+            ],
+            shared_libs: [
+                "libTEECommon",
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "VP9SecureVdecCA",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/VP9SecureVdecCA.so",
+            ],
+            shared_libs: [
+                "libTEECommon",
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/VP9SecureVdecCA.so",
+            ],
+            shared_libs: [
+                "libTEECommon",
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "arm.graphics-V1-ndk_platform",
     owner: "xiaomi",
     strip: {
@@ -141,6 +235,43 @@ cc_prebuilt_library_shared {
                 "libjpeg-alpha_vendor",
                 "libion",
                 "libion_mtk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libTEECommon",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libTEECommon.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libTEECommon.so",
+            ],
+            shared_libs: [
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -2157,66 +2288,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "AVCSecureVdecCA",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/AVCSecureVdecCA.so",
-            ],
-            shared_libs: [
-                "libTEECommon",
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "VP9SecureVdecCA",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/VP9SecureVdecCA.so",
-            ],
-            shared_libs: [
-                "libTEECommon",
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libGLES_mali",
     owner: "xiaomi",
     strip: {
@@ -3211,31 +3282,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libTEECommon",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libTEECommon.so",
-            ],
-            shared_libs: [
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",

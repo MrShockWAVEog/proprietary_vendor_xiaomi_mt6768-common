@@ -329,9 +329,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6768-common/proprietary/vendor/thh/ta/isee_model.json:$(TARGET_COPY_OUT_VENDOR)/thh/ta/isee_model.json
 
 PRODUCT_PACKAGES += \
+    AVCSecureVdecCA \
+    VP9SecureVdecCA \
     arm.graphics-V1-ndk_platform \
     vendor.mediatek.hardware.nvram@1.1-impl \
     libJpgEncPipe \
+    libTEECommon \
     libbwc \
     libfile_op \
     libhevce_sb.ca7.android \
@@ -393,8 +396,6 @@ PRODUCT_PACKAGES += \
     libvt_custom \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@7.1 \
-    AVCSecureVdecCA \
-    VP9SecureVdecCA \
     libGLES_mali \
     libGLES_meow \
     libMEOW_data \
@@ -424,7 +425,6 @@ PRODUCT_PACKAGES += \
     libFrameRecord \
     libNoFpsActor \
     libOpenCL \
-    libTEECommon \
     libaal_mtk \
     libaalservice \
     libadpcmdec_mtk \
