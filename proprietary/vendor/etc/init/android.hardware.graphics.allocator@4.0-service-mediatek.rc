@@ -1,4 +1,5 @@
 service vendor.gralloc-4-0 /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
+    interface android.hardware.graphics.allocator@4.0::IAllocator default
     class hal animation
     interface android.hardware.graphics.allocator@4.0::IAllocator default
     user system
