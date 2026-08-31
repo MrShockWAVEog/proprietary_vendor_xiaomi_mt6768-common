@@ -333,7 +333,6 @@ PRODUCT_PACKAGES += \
     arm.graphics-V1-ndk_platform \
     vendor.mediatek.hardware.nvram@1.1-impl \
     libJpgEncPipe \
-    libaedv \
     libbwc \
     libfile_op \
     libhevce_sb.ca7.android \
@@ -341,7 +340,6 @@ PRODUCT_PACKAGES += \
     libion_ulit \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libladder \
     libmtklimiter_vendor \
     libmtkshifter_vendor \
     libnvram \
