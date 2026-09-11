@@ -479,7 +479,7 @@ PRODUCT_PACKAGES += \
     libksensor \
     libmmagent \
     libmml \
-    libmnl \
+    libmnl_mtk \
     libmp3dec_mtk \
     libmtcloader \
     libneuroeara \
