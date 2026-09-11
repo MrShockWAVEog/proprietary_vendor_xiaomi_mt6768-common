@@ -459,7 +459,7 @@ PRODUCT_PACKAGES += \
     libcrypto-mdapp \
     libcurl-md \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libged \
     libgf_ca \
     libgf_hal \
