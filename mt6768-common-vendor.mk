@@ -580,8 +580,6 @@ PRODUCT_PACKAGES += \
     MtkGbaService \
     MtkTelephonyAssist \
     mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-ims-extension-plugin \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml \
@@ -650,6 +648,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
     mediatek-telephony-base
