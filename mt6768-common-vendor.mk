@@ -352,8 +352,6 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libwapi \
     libmtk_drvb \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
     libHEVCdec_sa.ca7.android \
